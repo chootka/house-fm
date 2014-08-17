@@ -1,3 +1,6 @@
 [submodule "subnodes"]
 	path = subnodes
 	url = git://github.com/chootka/subnodes.git
+[submodule "PirateRadio"]
+	path = PirateRadio
+	url = git://github.com/Make-Magazine/PirateRadio.git
