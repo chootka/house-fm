@@ -13,7 +13,7 @@
 #X obj 484 141 - 100;
 #X obj 489 182 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 281 81 knob 32 32 0 1 0 0 empty empty MASTERvol -67 30 0 12
--258113 -1 -1 1531 1;
+-258113 -1 -1 0 1;
 #X obj 160 92 +~;
 #X floatatom 159 51 5 0 0 0 - - -;
 #X text 154 36 Carrier;
@@ -32,9 +32,7 @@
 #X obj 682 129 + 200;
 #X obj 686 167 s freq;
 #X obj 275 -94 r freq;
-#X obj 781 124 s amp;
 #X obj 298 34 r amp;
-#X obj 779 89 randomF 0.8;
 #X obj 579 51 metro 125;
 #X connect 0 0 6 0;
 #X connect 1 0 2 0;
@@ -53,14 +51,12 @@
 #X connect 17 0 16 0;
 #X connect 19 0 13 1;
 #X connect 20 0 19 1;
-#X connect 22 0 33 0;
+#X connect 22 0 31 0;
 #X connect 23 0 24 0;
 #X connect 25 0 20 0;
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
 #X connect 29 0 17 0;
-#X connect 31 0 12 0;
-#X connect 32 0 30 0;
-#X connect 33 0 23 0;
-#X connect 33 0 26 0;
-#X connect 33 0 32 0;
+#X connect 30 0 12 0;
+#X connect 31 0 23 0;
+#X connect 31 0 26 0;
