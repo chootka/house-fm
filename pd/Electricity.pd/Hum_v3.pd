@@ -1,4 +1,4 @@
-#N canvas 270 22 697 529 10;
+#N canvas 399 133 697 529 10;
 #X msg 217 88 \; pd dsp 1;
 #X obj 197 34 loadbang;
 #X obj 217 61 del 100;
@@ -11,7 +11,7 @@
 #X obj 177 267 lop~ 2;
 #X obj 176 290 lop~ 2;
 #X obj 178 319 *~;
-#X obj 178 349 clip~ -0.5 0.5;
+#X obj 192 349 clip~ -0.5 0.5;
 #X obj 179 380 *~ 500;
 #X obj 183 407 *~;
 #X obj 115 412 +~ 20;
@@ -20,7 +20,7 @@
 #X obj 290 282 vd~ \$0-comb \$1;
 #X obj 329 323 *~ \$2;
 #X obj 329 360 inlet~;
-#X obj 364 360 lop~ 3000;
+#X obj 416 360 lop~ 3000;
 #X obj 364 397 +~;
 #X obj 300 424 outlet~;
 #X obj 364 434 delwrite~ \$0-comb 100;

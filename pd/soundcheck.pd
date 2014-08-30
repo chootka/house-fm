@@ -1,19 +1,25 @@
-#N canvas 270 22 696 506 10;
-#X obj 157 410 dac~;
-#X msg 217 88 \; pd dsp 1;
-#X obj 197 34 loadbang;
-#X obj 217 61 del 100;
-#X text 291 61 Why we add a delay here? Answer : http://puredata.info/docs/faq/why-doesn-t-audio-work-when-i-start-pd-in-nogui-mode
+#N canvas 651 87 696 506 10;
+#X obj 259 432 dac~;
+#X msg 326 55 \; pd dsp 1;
+#X obj 306 1 loadbang;
+#X obj 326 28 del 100;
+#X text 400 28 Why we add a delay here? Answer : http://puredata.info/docs/faq/why-doesn-t-audio-work-when-i-start-pd-in-nogui-mode
 ;
 #X obj 104 268 osc~ 220;
 #X floatatom 129 229 5 0 0 0 - - -;
 #X obj 102 199 random 500;
 #X obj 95 167 metro 125;
-#X obj 126 343 *~ 1;
+#X obj 281 365 *~ 1;
 #X obj 51 270 osc~;
 #X obj 162 268 osc~;
-#X obj 86 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 241 136 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 395 158 metro 500;
+#X floatatom 429 220 5 0 0 0 - - -;
+#X obj 402 190 random 300;
+#X obj 426 271 osc~ 200;
+#X obj 246 271 osc~;
+#X obj 343 273 osc~;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
 #X connect 3 0 12 0;
@@ -28,3 +34,12 @@
 #X connect 10 0 9 0;
 #X connect 11 0 9 0;
 #X connect 12 0 8 0;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 16 0;
+#X connect 14 0 17 0;
+#X connect 14 0 18 0;
+#X connect 15 0 14 0;
+#X connect 16 0 9 0;
+#X connect 17 0 9 0;
+#X connect 18 0 9 0;
