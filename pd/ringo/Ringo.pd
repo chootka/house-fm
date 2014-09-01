@@ -1,0 +1,1299 @@
+#N canvas 597 293 553 323 10;
+#X obj -4 -34 cnv 15 550 320 empty empty empty 45 25 0 14 -233017 -66577
+0;
+#X obj -4 180 cnv 15 50 20 empty empty MONO 45 25 0 14 -233017 -66577
+0;
+#X obj -4 214 cnv 15 30 20 empty empty STEREO 45 25 0 14 -233017 -66577
+0;
+#X obj -4 0 cnv 15 40 20 empty empty FILE 45 25 0 14 -233017 -66577
+0;
+#X obj 4 192 vradio 30 1 0 2 numChannels MIDI_channels empty 0 -8 0
+10 -191407 -99865 -99865 0;
+#X obj 102 -23 cnv 15 100 30 empty empty MODULATION 0 10 0 14 -233017
+-66577 0;
+#X obj 104 0 hsl 330 30 0 127 0 0 RingerPitch MIDI_RingerPitch empty
+-2 -8 0 10 -191407 -99865 -1 15543 1;
+#X obj 322 50 cnv 15 20 20 empty pitchCents +0 0 12 0 11 -233017 -66577
+0;
+#X obj 366 52 cnv 15 30 30 empty empty Hz: 0 10 0 10 -233017 -66577
+0;
+#X obj 388 50 cnv 15 20 20 empty pitchHz 246.942 0 12 0 11 -233017
+-66577 0;
+#X obj 105 86 cnv 15 80 20 empty empty HARMONICS 0 10 0 14 -233017
+-66577 0;
+#X obj 106 106 cnv 15 15 15 empty empty 1 0 10 0 10 -233017 -66577
+0;
+#X obj 105 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par1 empty 0 -8 0
+10 -191407 -1 -1 100 256;
+#X obj 105 123 knob 32 32 0 127 0 0 RAW_par1 MIDI_par1 empty 0 -8 0
+8 -262144 -162280 -1 3100 1;
+#X obj 156 106 cnv 15 15 15 empty empty 2 0 10 0 10 -233017 -66577
+0;
+#X obj 206 106 cnv 15 15 15 empty empty 3 0 10 0 10 -233017 -66577
+0;
+#X obj 256 106 cnv 15 15 15 empty empty 4 0 10 0 10 -233017 -66577
+0;
+#X obj 306 106 cnv 15 15 15 empty empty 5 0 10 0 10 -233017 -66577
+0;
+#X obj 356 106 cnv 15 15 15 empty empty 6 0 10 0 10 -233017 -66577
+0;
+#X obj 406 106 cnv 15 15 15 empty empty 7 0 10 0 10 -233017 -66577
+0;
+#X symbolatom 293 52 4 0 0 0 - pitchName asd;
+#X obj 154 123 knob 32 32 0 127 0 0 RAW_par2 MIDI_par2 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 204 123 knob 32 32 0 127 0 0 RAW_par3 MIDI_par3 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 254 123 knob 32 32 0 127 0 0 RAW_par4 MIDI_par4 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 304 123 knob 32 32 0 127 0 0 RAW_par5 MIDI_par5 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 354 123 knob 32 32 0 127 0 0 RAW_par6 MIDI_par6 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 404 123 knob 32 32 0 127 0 0 RAW_par7 MIDI_par7 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 155 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par2 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 205 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par3 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 255 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par4 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 305 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par5 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 355 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par6 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 405 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par7 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 128 110 bng 10 250 50 0 learn_par1 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 178 110 bng 10 250 50 0 learn_par2 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 227 110 bng 10 250 50 0 learn_par3 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 277 110 bng 10 250 50 0 learn_par4 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 327 110 bng 10 250 50 0 learn_par5 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 377 110 bng 10 250 50 0 learn_par6 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 427 110 bng 10 250 50 0 learn_par7 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 426 -15 bng 10 250 50 0 learn_RingerPitch -- empty 17 7 0 10
+-228856 -128992 -1;
+#X obj 103 82 cnv 2 100 2 empty empty __________________________________________
+0 0 0 14 -233017 -66577 0;
+#X obj 276 35 bng 10 250 50 0 learn_RingerCents -- empty 17 7 0 10
+-228856 -128992 -1;
+#X obj 102 33 cnv 15 30 30 empty empty CENTS 0 10 0 10 -233017 -66577
+0;
+#X obj 104 50 hsl 180 20 0 127 0 0 RingerCents MIDI_RingerCents empty
+-2 -8 0 10 -191407 -99865 -1 0 1;
+#X obj 463 -23 cnv 15 20 10 empty empty WET 0 0 0 10 -233017 -66577
+0;
+#X obj 463 183 cnv 15 20 10 empty empty DRY 0 0 0 10 -233017 -66577
+0;
+#X obj 496 -23 cnv 15 20 10 empty empty VOLUME 0 0 0 10 -233017 -66577
+0;
+#X obj 461 1 vsl 20 170 0 127 0 0 Mix MIDI_Mix empty 0 -9 0 10 -191407
+-1 -1 8517 1;
+#X obj 522 -1 vradio 10 1 0 5 noth VUmeter empty 0 -8 0 10 -233017
+-233017 -262144 4;
+#X obj 497 1 vsl 20 170 0 127 0 0 Volume MIDI_Volume empty 0 -9 0 10
+-191407 -1 -1 5988 1;
+#X obj 471 -16 bng 10 250 50 0 learn_Mix -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 506 -16 bng 10 250 50 0 learn_Volume -- empty 17 7 0 10 -228856
+-128992 -1;
+#X floatatom 497 179 5 0 0 0 - vis_Volume sdfg;
+#X obj 106 206 cnv 15 15 15 empty empty 1/2 0 10 0 10 -233017 -66577
+0;
+#X obj 156 206 cnv 15 15 15 empty empty 1/3 0 10 0 10 -233017 -66577
+0;
+#X obj 206 206 cnv 15 15 15 empty empty 1/4 0 10 0 10 -233017 -66577
+0;
+#X obj 256 206 cnv 15 15 15 empty empty 1/5 0 10 0 10 -233017 -66577
+0;
+#X obj 306 206 cnv 15 15 15 empty empty 1/6 0 10 0 10 -233017 -66577
+0;
+#X obj 356 206 cnv 15 15 15 empty empty 1/7 0 10 0 10 -233017 -66577
+0;
+#X obj 104 223 knob 32 32 0 127 0 0 RAW_sub2 MIDI_sub2 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 154 223 knob 32 32 0 127 0 0 RAW_sub3 MIDI_sub3 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 204 223 knob 32 32 0 127 0 0 RAW_sub4 MIDI_sub4 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 254 223 knob 32 32 0 127 0 0 RAW_sub5 MIDI_sub5 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 304 223 knob 32 32 0 127 0 0 RAW_sub6 MIDI_sub6 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 354 223 knob 32 32 0 127 0 0 RAW_sub7 MIDI_sub7 empty 0 -8 0
+8 -262144 -162280 -1 0 1;
+#X obj 105 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub2 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 155 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub3 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 205 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub4 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 255 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub5 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 305 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub6 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 355 262 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad sub7 empty 0 -8 0
+10 -191407 -1 -1 0 256;
+#X obj 128 210 bng 10 250 50 0 learn_sub2 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 177 210 bng 10 250 50 0 learn_sub3 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 227 210 bng 10 250 50 0 learn_sub4 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 277 210 bng 10 250 50 0 learn_sub5 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 327 210 bng 10 250 50 0 learn_sub6 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 377 210 bng 10 250 50 0 learn_sub7 -- empty 17 7 0 10 -228856
+-128992 -1;
+#X obj 105 186 cnv 15 80 20 empty empty SUBHARMONICS 0 10 0 14 -233017
+-66577 0;
+#X obj 103 182 cnv 2 100 2 empty empty __________________________________________
+0 0 0 14 -233017 -66577 0;
+#X obj 5 116 tgl 60 0 playMsg MIDI_playMsg empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 5 116 cnv 15 60 60 empty playStatus PLAY 7 31 0 20 -191407 -66577
+0;
+#X obj -4 -31 cnv 15 40 20 empty empty LIVE 45 25 0 14 -233017 -66577
+0;
+#X obj 4 -21 vradio 30 1 0 2 selInput MIDI_input empty 0 -8 0 10 -191407
+-99865 -99865 1;
+#X obj 451 213 tgl 60 0 recMsg MIDI_recMsg empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 451 213 tgl 60 0 recMsg MIDI_recMsg empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 451 213 cnv 15 60 60 empty recStatus REC 13 31 0 20 -191407
+-66577 0;
+#X obj 5 51 bng 30 250 50 0 openPanel empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 35 51 bng 30 250 50 0 openPanel empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 5 51 cnv 15 60 30 empty empty OPEN 8 15 0 18 -191407 -66577
+0;
+#N canvas 53 22 845 627 instructions 0;
+#N canvas 154 57 1036 698 code 0;
+#X obj 106 451 hip~ 5;
+#X obj 106 297 hip~ 5;
+#X obj 19 296 hip~ 5;
+#X obj 19 451 hip~ 5;
+#X obj 19 474 s~ outL;
+#X obj 106 474 s~ outR;
+#X obj 106 171 sel 0 1;
+#X obj 106 36 r selInput;
+#X msg 106 246 set Rlive;
+#X msg 125 220 set Rfile;
+#X obj 106 274 r~ Rlive;
+#X obj 19 273 r~ Llive;
+#X msg 27 244 set Lfile;
+#X msg 19 216 set Llive;
+#X obj 103 10 s~ Llive;
+#X obj 148 -11 s~ Rlive;
+#X obj 106 427 *~;
+#X obj 19 426 *~;
+#X obj 103 -32 hip~ 5;
+#X obj 148 -32 hip~ 5;
+#X obj 483 125 r~ outL;
+#X obj 565 121 r~ outR;
+#X obj 565 51 sel 0 1;
+#X obj 565 -53 r numChannels;
+#X msg 584 76 set outR;
+#X msg 565 96 set outL;
+#X obj 261 264 s~ Lfile;
+#X obj 286 244 s~ Rfile;
+#N canvas 46 107 265 283 recording 0;
+#X obj 25 150 r recInstr;
+#X obj 100 150 r~ recL;
+#X obj 115 175 r recFades;
+#X obj 115 200 line~;
+#X obj 100 225 *~;
+#X obj 25 250 writesf~ 1;
+#X connect 0 0 5 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 5 0;
+#X restore 859 254 pd recording;
+#N canvas 291 22 961 725 pre-rec 0;
+#X msg 63 81 clear;
+#X obj 11 275 s pd-recording;
+#X obj 36 30 r numChannels;
+#X obj 11 81 sel 0 1;
+#X obj 36 52 t f b;
+#X msg 622 448 open \$1 \, start;
+#X msg 631 576 stop;
+#X obj 764 66 time;
+#X obj 575 35 t b b;
+#X obj 708 120 makefilename 0%d;
+#X obj 708 97 moses 10;
+#X obj 771 170 makefilename 0%d;
+#X obj 771 147 moses 10;
+#X obj 834 217 makefilename 0%d;
+#X obj 834 194 moses 10;
+#X obj 457 168 makefilename 0%d;
+#X obj 457 145 moses 10;
+#X obj 520 218 makefilename 0%d;
+#X obj 520 195 moses 10;
+#X obj 583 265 makefilename 0%d;
+#X obj 583 242 moses 10;
+#X obj 457 313 list append;
+#X obj 520 290 list append;
+#X obj 575 59 date;
+#X obj 457 335 list2symbol -;
+#X obj 595 359 list append;
+#X obj 595 380 list2symbol @;
+#X obj 622 602 s recInstr;
+#X msg 161 439 \; recStatus label REC \, label_pos 13 31;
+#X obj 631 474 r recMsg;
+#X obj 631 495 sel 0;
+#X obj 575 -7 r recMsg;
+#X obj 575 13 sel 1;
+#X obj 161 387 r recMsg;
+#X obj 100 414 metro 500;
+#X obj 200 391 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 100 528 \; recStatus label \$1 \, label_pos 7 31;
+#X obj 100 459 sel 0 1;
+#X msg 119 481 symbol STOP;
+#X msg 100 501 symbol;
+#X obj 161 414 sel 0;
+#X obj 771 242 list append;
+#X obj 708 265 list append;
+#X obj 708 287 list2symbol ';
+#X obj 578 623 s recFades;
+#X obj 595 426 t b s;
+#X msg 578 476 0 \, 1 50;
+#X obj 631 519 t b b;
+#X obj 631 552 delay 55;
+#X msg 589 553 0 50;
+#X obj 595 405 makefilename /Ringo_%s.wav;
+#X msg 8 106 obj 25 150 r recInstr \, obj 100 150 r~ recL \, obj 115
+175 r recFades \, obj 115 200 line~ \, obj 100 225 *~ \, obj 25 250
+writesf~ 1 \, connect 0 0 5 0 \, connect 1 0 4 0 \, connect 2 0 3 0
+\, connect 3 0 4 1 \, connect 4 0 5 0;
+#X msg 30 175 obj 25 150 r recInstr \, obj 100 150 r~ recL \, obj 115
+175 r recFades \, obj 115 200 line~ \, obj 100 225 *~ \, obj 25 250
+writesf~ 2 \, obj 200 150 r~ recR \, obj 175 225 *~ \, connect 0 0
+5 0 \, connect 1 0 4 0 \, connect 2 0 3 0 \, connect 3 0 4 1 \, connect
+4 0 5 0 \, connect 6 0 7 1 \, connect 3 0 7 0 \, connect 7 0 5 1;
+#X connect 0 0 1 0;
+#X connect 2 0 4 0;
+#X connect 3 0 51 0;
+#X connect 3 1 52 0;
+#X connect 4 0 3 0;
+#X connect 4 1 0 0;
+#X connect 5 0 27 0;
+#X connect 6 0 27 0;
+#X connect 7 0 10 0;
+#X connect 7 1 12 0;
+#X connect 7 2 14 0;
+#X connect 8 0 23 0;
+#X connect 8 1 7 0;
+#X connect 9 0 42 0;
+#X connect 10 0 9 0;
+#X connect 10 1 42 0;
+#X connect 11 0 41 0;
+#X connect 12 0 11 0;
+#X connect 12 1 41 0;
+#X connect 13 0 41 1;
+#X connect 14 0 13 0;
+#X connect 14 1 41 1;
+#X connect 15 0 21 0;
+#X connect 16 0 15 0;
+#X connect 16 1 21 0;
+#X connect 17 0 22 0;
+#X connect 18 0 17 0;
+#X connect 18 1 22 0;
+#X connect 19 0 22 1;
+#X connect 20 0 19 0;
+#X connect 20 1 22 1;
+#X connect 21 0 24 0;
+#X connect 22 0 21 1;
+#X connect 23 0 16 0;
+#X connect 23 1 18 0;
+#X connect 23 2 20 0;
+#X connect 24 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 50 0;
+#X connect 29 0 30 0;
+#X connect 30 0 47 0;
+#X connect 31 0 32 0;
+#X connect 32 0 8 0;
+#X connect 33 0 34 0;
+#X connect 33 0 40 0;
+#X connect 34 0 35 0;
+#X connect 35 0 37 0;
+#X connect 37 0 39 0;
+#X connect 37 1 38 0;
+#X connect 38 0 36 0;
+#X connect 39 0 36 0;
+#X connect 40 0 28 0;
+#X connect 41 0 42 1;
+#X connect 42 0 43 0;
+#X connect 43 0 25 1;
+#X connect 45 0 46 0;
+#X connect 45 1 5 0;
+#X connect 46 0 44 0;
+#X connect 47 0 48 0;
+#X connect 47 1 49 0;
+#X connect 48 0 6 0;
+#X connect 49 0 44 0;
+#X connect 50 0 45 0;
+#X connect 51 0 1 0;
+#X connect 52 0 1 0;
+#X restore 859 234 pd pre-rec;
+#X obj 121 354 r RingerFreq;
+#X obj 121 375 mtof;
+#X obj 777 63 pitch;
+#X obj 777 27 int;
+#X msg 901 69 \; pitchCents label \$1;
+#X obj 859 125 mtof;
+#X msg 859 169 \; pitchHz label \$1;
+#X obj 783 85 s pitchName;
+#X obj 859 147 list2symbol;
+#X obj 901 -39 r RingerCents;
+#X obj 901 6 int;
+#X obj 901 -15 / 1.28;
+#X obj 777 6 r RingerPitch;
+#X obj 858 37 / 100;
+#X obj 859 57 t b f;
+#X obj 859 84 + 0;
+#X obj 866 105 s RingerFreq;
+#X obj 901 47 makefilename +%d;
+#X obj 8 -55 loadbang;
+#X obj 8 25 s init;
+#N canvas 79 76 947 615 MIDI 0;
+#X msg 77 216 26;
+#X obj 11 282 s MIDI_par1;
+#X obj 11 164 r learn_par1;
+#X obj 11 303 r RAW_par1;
+#X obj 11 367 s par1;
+#X msg 187 216 27;
+#X msg 297 216 28;
+#X obj 121 164 r learn_par2;
+#X obj 231 164 r learn_par3;
+#X obj 121 282 s MIDI_par2;
+#X obj 231 282 s MIDI_par3;
+#X obj 121 303 r RAW_par2;
+#X obj 231 303 r RAW_par3;
+#X obj 121 367 s par2;
+#X obj 231 367 s par3;
+#X msg 407 216 29;
+#X msg 517 216 30;
+#X msg 627 216 31;
+#X msg 737 216 32;
+#X obj 341 164 r learn_par4;
+#X obj 451 164 r learn_par5;
+#X obj 561 164 r learn_par6;
+#X obj 671 164 r learn_par7;
+#X obj 341 282 s MIDI_par4;
+#X obj 451 282 s MIDI_par5;
+#X obj 561 282 s MIDI_par6;
+#X obj 671 282 s MIDI_par7;
+#X obj 671 303 r RAW_par7;
+#X obj 561 303 r RAW_par6;
+#X obj 451 303 r RAW_par5;
+#X obj 341 303 r RAW_par4;
+#X obj 341 367 s par4;
+#X obj 451 367 s par5;
+#X obj 561 367 s par6;
+#X obj 671 367 s par7;
+#X obj 11 326 / 1.27;
+#X obj 11 346 i;
+#X obj 121 346 i;
+#X obj 231 346 i;
+#X obj 341 346 i;
+#X obj 451 346 i;
+#X obj 561 346 i;
+#X obj 671 346 i;
+#X obj 121 326 / 1.27;
+#X obj 231 326 / 1.27;
+#X obj 341 326 / 1.27;
+#X obj 451 326 / 1.27;
+#X obj 561 326 / 1.27;
+#X obj 671 326 / 1.27;
+#X msg 77 66 2;
+#X msg 217 66 1;
+#X obj 11 14 r learn_RingerCents;
+#X obj 11 127 s MIDI_RingerCents;
+#X obj 151 14 r learn_RingerPitch;
+#X obj 151 127 s MIDI_RingerPitch;
+#X obj 18 240 r init;
+#X msg 18 260 127;
+#X obj 20 105 r init;
+#X obj 159 86 r init;
+#X msg 159 106 60;
+#X msg 377 66 3;
+#X msg 517 66 4;
+#X obj 311 14 r learn_Mix;
+#X obj 451 14 r learn_Volume;
+#X obj 311 127 s MIDI_Mix;
+#X obj 451 127 s MIDI_Volume;
+#X msg 613 66 menusave;
+#X obj 613 89 s pd-Ringo.pd;
+#X obj 11 216 midilearn;
+#X obj 121 216 midilearn;
+#X obj 231 216 midilearn;
+#X obj 341 216 midilearn;
+#X obj 451 216 midilearn;
+#X obj 561 216 midilearn;
+#X obj 671 216 midilearn;
+#X obj 11 66 midilearn;
+#X obj 151 66 midilearn;
+#X obj 311 66 midilearn;
+#X obj 451 66 midilearn;
+#X obj 613 43 r savePatch;
+#X obj 24 191 s savePatch;
+#X obj 134 191 s savePatch;
+#X obj 244 191 s savePatch;
+#X obj 354 191 s savePatch;
+#X obj 464 191 s savePatch;
+#X obj 574 191 s savePatch;
+#X obj 684 191 s savePatch;
+#X obj 19 36 s savePatch;
+#X obj 159 36 s savePatch;
+#X obj 319 36 s savePatch;
+#X obj 459 36 s savePatch;
+#X obj 318 86 r init;
+#X msg 318 106 64;
+#X obj 458 86 r init;
+#X msg 458 106 45;
+#X obj 128 240 r init;
+#X obj 238 240 r init;
+#X obj 348 240 r init;
+#X obj 458 240 r init;
+#X obj 568 240 r init;
+#X obj 678 240 r init;
+#X msg 77 456 18;
+#X msg 187 456 19;
+#X msg 297 456 20;
+#X msg 407 456 21;
+#X msg 517 456 22;
+#X msg 627 456 23;
+#X obj 11 546 / 1.27;
+#X obj 11 566 i;
+#X obj 121 566 i;
+#X obj 231 566 i;
+#X obj 341 566 i;
+#X obj 451 566 i;
+#X obj 561 566 i;
+#X obj 121 546 / 1.27;
+#X obj 231 546 / 1.27;
+#X obj 341 546 / 1.27;
+#X obj 451 546 / 1.27;
+#X obj 561 546 / 1.27;
+#X obj 18 480 r init;
+#X obj 11 456 midilearn;
+#X obj 121 456 midilearn;
+#X obj 231 456 midilearn;
+#X obj 341 456 midilearn;
+#X obj 451 456 midilearn;
+#X obj 561 456 midilearn;
+#X obj 24 431 s savePatch;
+#X obj 134 431 s savePatch;
+#X obj 244 431 s savePatch;
+#X obj 354 431 s savePatch;
+#X obj 464 431 s savePatch;
+#X obj 574 431 s savePatch;
+#X obj 128 480 r init;
+#X obj 238 480 r init;
+#X obj 348 480 r init;
+#X obj 458 480 r init;
+#X obj 568 480 r init;
+#X obj 11 404 r learn_sub2;
+#X obj 121 404 r learn_sub3;
+#X obj 231 404 r learn_sub4;
+#X obj 341 404 r learn_sub5;
+#X obj 451 404 r learn_sub6;
+#X obj 561 404 r learn_sub7;
+#X obj 11 502 s MIDI_sub2;
+#X obj 121 502 s MIDI_sub3;
+#X obj 231 502 s MIDI_sub4;
+#X obj 341 502 s MIDI_sub5;
+#X obj 451 502 s MIDI_sub6;
+#X obj 561 502 s MIDI_sub7;
+#X obj 561 523 r RAW_sub7;
+#X obj 561 587 s sub7;
+#X obj 451 587 s sub6;
+#X obj 341 587 s sub5;
+#X obj 231 587 s sub4;
+#X obj 121 587 s sub3;
+#X obj 11 587 s sub2;
+#X obj 11 523 r RAW_sub2;
+#X obj 121 523 r RAW_sub3;
+#X obj 231 523 r RAW_sub4;
+#X obj 341 523 r RAW_sub5;
+#X obj 451 523 r RAW_sub6;
+#X obj 705 45 r init;
+#X msg 705 65 1;
+#X obj 705 87 s MIDI_input;
+#X connect 0 0 68 1;
+#X connect 2 0 68 0;
+#X connect 2 0 80 0;
+#X connect 3 0 35 0;
+#X connect 5 0 69 1;
+#X connect 6 0 70 1;
+#X connect 7 0 69 0;
+#X connect 7 0 81 0;
+#X connect 8 0 70 0;
+#X connect 8 0 82 0;
+#X connect 11 0 43 0;
+#X connect 12 0 44 0;
+#X connect 15 0 71 1;
+#X connect 16 0 72 1;
+#X connect 17 0 73 1;
+#X connect 18 0 74 1;
+#X connect 19 0 71 0;
+#X connect 19 0 83 0;
+#X connect 20 0 72 0;
+#X connect 20 0 84 0;
+#X connect 21 0 73 0;
+#X connect 21 0 85 0;
+#X connect 22 0 74 0;
+#X connect 22 0 86 0;
+#X connect 27 0 48 0;
+#X connect 28 0 47 0;
+#X connect 29 0 46 0;
+#X connect 30 0 45 0;
+#X connect 35 0 36 0;
+#X connect 36 0 4 0;
+#X connect 37 0 13 0;
+#X connect 38 0 14 0;
+#X connect 39 0 31 0;
+#X connect 40 0 32 0;
+#X connect 41 0 33 0;
+#X connect 42 0 34 0;
+#X connect 43 0 37 0;
+#X connect 44 0 38 0;
+#X connect 45 0 39 0;
+#X connect 46 0 40 0;
+#X connect 47 0 41 0;
+#X connect 48 0 42 0;
+#X connect 49 0 75 1;
+#X connect 50 0 76 1;
+#X connect 51 0 75 0;
+#X connect 51 0 87 0;
+#X connect 53 0 76 0;
+#X connect 53 0 88 0;
+#X connect 55 0 56 0;
+#X connect 56 0 1 0;
+#X connect 57 0 52 0;
+#X connect 58 0 59 0;
+#X connect 59 0 54 0;
+#X connect 60 0 77 1;
+#X connect 61 0 78 1;
+#X connect 62 0 77 0;
+#X connect 62 0 89 0;
+#X connect 63 0 78 0;
+#X connect 63 0 90 0;
+#X connect 66 0 67 0;
+#X connect 68 0 1 0;
+#X connect 68 1 0 0;
+#X connect 69 0 9 0;
+#X connect 69 1 5 0;
+#X connect 70 0 10 0;
+#X connect 70 1 6 0;
+#X connect 71 0 23 0;
+#X connect 71 1 15 0;
+#X connect 72 0 24 0;
+#X connect 72 1 16 0;
+#X connect 73 0 25 0;
+#X connect 73 1 17 0;
+#X connect 74 0 26 0;
+#X connect 74 1 18 0;
+#X connect 75 0 52 0;
+#X connect 75 1 49 0;
+#X connect 76 0 54 0;
+#X connect 76 1 50 0;
+#X connect 77 0 64 0;
+#X connect 77 1 60 0;
+#X connect 78 0 65 0;
+#X connect 78 1 61 0;
+#X connect 79 0 66 0;
+#X connect 91 0 92 0;
+#X connect 92 0 64 0;
+#X connect 93 0 94 0;
+#X connect 94 0 65 0;
+#X connect 95 0 9 0;
+#X connect 96 0 10 0;
+#X connect 97 0 23 0;
+#X connect 98 0 24 0;
+#X connect 99 0 25 0;
+#X connect 100 0 26 0;
+#X connect 101 0 120 1;
+#X connect 102 0 121 1;
+#X connect 103 0 122 1;
+#X connect 104 0 123 1;
+#X connect 105 0 124 1;
+#X connect 106 0 125 1;
+#X connect 107 0 108 0;
+#X connect 108 0 155 0;
+#X connect 109 0 154 0;
+#X connect 110 0 153 0;
+#X connect 111 0 152 0;
+#X connect 112 0 151 0;
+#X connect 113 0 150 0;
+#X connect 114 0 109 0;
+#X connect 115 0 110 0;
+#X connect 116 0 111 0;
+#X connect 117 0 112 0;
+#X connect 118 0 113 0;
+#X connect 119 0 143 0;
+#X connect 120 0 143 0;
+#X connect 120 1 101 0;
+#X connect 121 0 144 0;
+#X connect 121 1 102 0;
+#X connect 122 0 145 0;
+#X connect 122 1 103 0;
+#X connect 123 0 146 0;
+#X connect 123 1 104 0;
+#X connect 124 0 147 0;
+#X connect 124 1 105 0;
+#X connect 125 0 148 0;
+#X connect 125 1 106 0;
+#X connect 132 0 144 0;
+#X connect 133 0 145 0;
+#X connect 134 0 146 0;
+#X connect 135 0 147 0;
+#X connect 136 0 148 0;
+#X connect 137 0 120 0;
+#X connect 137 0 126 0;
+#X connect 138 0 121 0;
+#X connect 138 0 127 0;
+#X connect 139 0 122 0;
+#X connect 139 0 128 0;
+#X connect 140 0 123 0;
+#X connect 140 0 129 0;
+#X connect 141 0 124 0;
+#X connect 141 0 130 0;
+#X connect 142 0 125 0;
+#X connect 142 0 131 0;
+#X connect 149 0 118 0;
+#X connect 156 0 107 0;
+#X connect 157 0 114 0;
+#X connect 158 0 115 0;
+#X connect 159 0 116 0;
+#X connect 160 0 117 0;
+#X connect 161 0 162 0;
+#X connect 162 0 163 0;
+#X restore 859 213 pd MIDI;
+#X obj 596 374 *~;
+#X obj 663 326 line~;
+#X msg 663 303 \$1 10;
+#X obj 663 185 r Volume;
+#X obj 581 588 +~;
+#N canvas 0 22 285 485 VUMETER 0;
+#X obj 79 112 moses 100;
+#X msg 130 133 \; VUmeter 0 \; VUmeter color 10 13 0;
+#X msg 79 181 \; VUmeter 1 \; VUmeter color 10 14 0;
+#X obj 34 227 moses 90;
+#X msg 79 249 2;
+#X obj 14 266 moses 85;
+#X msg 59 290 3;
+#X msg 109 379 \; VUmeter \$1 \; VUmeter color 10 16 0;
+#X obj 14 330 moses 80;
+#X msg 59 351 4;
+#X msg 14 428 \; VUmeter 4 \; VUmeter color 10 10 0;
+#X obj 34 14 inlet~;
+#X obj 34 37 env~ 1024;
+#X obj 34 90 moses 95;
+#X obj 34 67 + 3;
+#X connect 0 0 2 0;
+#X connect 0 1 1 0;
+#X connect 3 0 5 0;
+#X connect 3 1 4 0;
+#X connect 4 0 7 0;
+#X connect 5 0 8 0;
+#X connect 5 1 6 0;
+#X connect 6 0 7 0;
+#X connect 8 0 10 0;
+#X connect 8 1 9 0;
+#X connect 9 0 7 0;
+#X connect 11 0 12 0;
+#X connect 12 0 14 0;
+#X connect 13 0 3 0;
+#X connect 13 1 0 0;
+#X connect 14 0 13 0;
+#X restore 581 609 pd VUMETER;
+#X obj 712 256 - 70;
+#X obj 663 229 expr 40*log10($f1);
+#X obj 663 279 dbtorms;
+#X obj 663 257 + 30;
+#X obj 663 207 / 1.5988;
+#X obj 712 278 s vis_Volume;
+#X obj 514 374 *~;
+#X obj 29 324 s~ Ldry;
+#X obj 119 324 s~ Rdry;
+#X obj 514 226 +~;
+#X obj 483 174 -~;
+#X obj 660 156 line~;
+#X msg 660 134 \$1 50;
+#X obj 529 205 *~;
+#X obj 514 148 r~ Ldry;
+#X obj 660 93 r Mix;
+#X obj 660 113 / 127;
+#X obj 596 221 +~;
+#X obj 565 169 -~;
+#X obj 611 200 *~;
+#X obj 596 143 r~ Rdry;
+#X obj 514 588 dac~ 1 2;
+#X obj 514 487 *~;
+#X obj 596 488 *~;
+#X obj 565 -13 t f b;
+#X obj 592 8 s declick;
+#X obj 665 349 r declick;
+#X obj 665 371 t b b;
+#X obj 106 108 t f b;
+#X obj 133 129 s declick;
+#X obj 665 462 line~;
+#X msg 665 440 1 100;
+#X obj 665 418 delay 300;
+#X msg 692 395 0 30;
+#X obj 565 28 pipe 40;
+#X obj 106 149 pipe 40;
+#X obj 112 58 r init;
+#X obj 572 -33 r init;
+#X obj 730 418 loadbang;
+#X msg 730 440 0;
+#X obj 8 -33 delay 200;
+#N canvas 8 22 898 725 complexOsc 0;
+#X obj -107 -24 inlet;
+#X obj -92 90 r par1;
+#X msg -92 130 \$1 100;
+#X obj -107 171 *~;
+#X obj -92 151 line~;
+#X obj -107 193 throw~ complexOsc;
+#X obj -107 66 osc~;
+#X obj -107 42 * 1;
+#X obj -107 -2 s fundamental;
+#X obj -107 21 r fundamental;
+#X msg 28 130 \$1 100;
+#X obj 13 171 *~;
+#X obj 28 151 line~;
+#X obj 13 193 throw~ complexOsc;
+#X obj 13 66 osc~;
+#X obj 13 21 r fundamental;
+#X msg 148 130 \$1 100;
+#X obj 133 171 *~;
+#X obj 148 151 line~;
+#X obj 133 193 throw~ complexOsc;
+#X obj 133 66 osc~;
+#X obj 133 21 r fundamental;
+#X msg 268 130 \$1 100;
+#X obj 253 171 *~;
+#X obj 268 151 line~;
+#X obj 253 193 throw~ complexOsc;
+#X obj 253 66 osc~;
+#X obj 253 21 r fundamental;
+#X msg 388 130 \$1 100;
+#X obj 373 171 *~;
+#X obj 388 151 line~;
+#X obj 373 193 throw~ complexOsc;
+#X obj 373 66 osc~;
+#X obj 373 21 r fundamental;
+#X msg 508 130 \$1 100;
+#X obj 493 171 *~;
+#X obj 508 151 line~;
+#X obj 493 193 throw~ complexOsc;
+#X obj 493 66 osc~;
+#X obj 493 21 r fundamental;
+#X msg 628 130 \$1 100;
+#X obj 613 171 *~;
+#X obj 628 151 line~;
+#X obj 613 193 throw~ complexOsc;
+#X obj 613 66 osc~;
+#X obj 613 21 r fundamental;
+#X obj 13 42 * 2;
+#X obj 133 42 * 3;
+#X obj 253 42 * 4;
+#X obj 373 42 * 5;
+#X obj 493 42 * 6;
+#X obj 613 42 * 7;
+#X obj 28 90 r par2;
+#X obj 148 90 r par3;
+#X obj 268 90 r par4;
+#X obj 388 90 r par5;
+#X obj 508 90 r par6;
+#X obj 628 90 r par7;
+#X obj -97 583 catch~ complexOsc;
+#X obj 628 110 / 100;
+#X obj 508 110 / 100;
+#X obj 388 110 / 100;
+#X obj 268 110 / 100;
+#X obj 148 110 / 100;
+#X obj 28 110 / 100;
+#X obj -92 110 / 100;
+#X obj 74 438 t b f;
+#X obj 134 438 t b f;
+#X obj 194 438 t b f;
+#X obj 254 438 t b f;
+#X obj 314 438 t b f;
+#X obj 374 438 t b f;
+#X obj 14 418 r par1;
+#X obj 74 418 r par2;
+#X obj 134 418 r par3;
+#X obj 194 418 r par4;
+#X obj 254 418 r par5;
+#X obj 314 418 r par6;
+#X obj 374 418 r par7;
+#X obj 14 540 sum;
+#X obj 14 561 / 100;
+#X obj -38 650 /~;
+#X msg 41 603 \$1 100;
+#X obj 41 624 line~;
+#X obj -38 676 outlet~;
+#X msg -82 330 \$1 100;
+#X obj -97 371 *~;
+#X obj -82 351 line~;
+#X obj -97 393 throw~ complexOsc;
+#X obj -97 266 osc~;
+#X obj -97 221 r fundamental;
+#X msg 38 330 \$1 100;
+#X obj 23 371 *~;
+#X obj 38 351 line~;
+#X obj 23 393 throw~ complexOsc;
+#X obj 23 266 osc~;
+#X obj 23 221 r fundamental;
+#X msg 158 330 \$1 100;
+#X obj 143 371 *~;
+#X obj 158 351 line~;
+#X obj 143 393 throw~ complexOsc;
+#X obj 143 266 osc~;
+#X obj 143 221 r fundamental;
+#X msg 278 330 \$1 100;
+#X obj 263 371 *~;
+#X obj 278 351 line~;
+#X obj 263 393 throw~ complexOsc;
+#X obj 263 266 osc~;
+#X obj 263 221 r fundamental;
+#X msg 398 330 \$1 100;
+#X obj 383 371 *~;
+#X obj 398 351 line~;
+#X obj 383 393 throw~ complexOsc;
+#X obj 383 266 osc~;
+#X obj 383 221 r fundamental;
+#X msg 518 330 \$1 100;
+#X obj 503 371 *~;
+#X obj 518 351 line~;
+#X obj 503 393 throw~ complexOsc;
+#X obj 503 266 osc~;
+#X obj 503 221 r fundamental;
+#X obj 518 310 / 100;
+#X obj 398 310 / 100;
+#X obj 278 310 / 100;
+#X obj 158 310 / 100;
+#X obj 38 310 / 100;
+#X obj -82 310 / 100;
+#X obj -82 290 r sub2;
+#X obj 38 290 r sub3;
+#X obj 158 290 r sub4;
+#X obj 278 290 r sub5;
+#X obj 398 290 r sub6;
+#X obj 518 290 r sub7;
+#X obj 14 581 sel 0;
+#X obj -97 242 / 2;
+#X obj 23 242 / 3;
+#X obj 143 242 / 4;
+#X obj 263 242 / 5;
+#X obj 383 242 / 6;
+#X obj 503 242 / 7;
+#X obj 424 438 t b f;
+#X obj 484 438 t b f;
+#X obj 544 438 t b f;
+#X obj 604 438 t b f;
+#X obj 664 438 t b f;
+#X obj 724 438 t b f;
+#X obj 424 418 r sub2;
+#X obj 724 418 r sub7;
+#X obj 664 418 r sub6;
+#X obj 604 418 r sub5;
+#X obj 544 418 r sub4;
+#X obj 484 418 r sub3;
+#X obj 14 518 pack 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X connect 0 0 8 0;
+#X connect 1 0 65 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 1;
+#X connect 6 0 3 0;
+#X connect 7 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;
+#X connect 12 0 11 1;
+#X connect 14 0 11 0;
+#X connect 15 0 46 0;
+#X connect 16 0 18 0;
+#X connect 17 0 19 0;
+#X connect 18 0 17 1;
+#X connect 20 0 17 0;
+#X connect 21 0 47 0;
+#X connect 22 0 24 0;
+#X connect 23 0 25 0;
+#X connect 24 0 23 1;
+#X connect 26 0 23 0;
+#X connect 27 0 48 0;
+#X connect 28 0 30 0;
+#X connect 29 0 31 0;
+#X connect 30 0 29 1;
+#X connect 32 0 29 0;
+#X connect 33 0 49 0;
+#X connect 34 0 36 0;
+#X connect 35 0 37 0;
+#X connect 36 0 35 1;
+#X connect 38 0 35 0;
+#X connect 39 0 50 0;
+#X connect 40 0 42 0;
+#X connect 41 0 43 0;
+#X connect 42 0 41 1;
+#X connect 44 0 41 0;
+#X connect 45 0 51 0;
+#X connect 46 0 14 0;
+#X connect 47 0 20 0;
+#X connect 48 0 26 0;
+#X connect 49 0 32 0;
+#X connect 50 0 38 0;
+#X connect 51 0 44 0;
+#X connect 52 0 64 0;
+#X connect 53 0 63 0;
+#X connect 54 0 62 0;
+#X connect 55 0 61 0;
+#X connect 56 0 60 0;
+#X connect 57 0 59 0;
+#X connect 58 0 81 0;
+#X connect 59 0 40 0;
+#X connect 60 0 34 0;
+#X connect 61 0 28 0;
+#X connect 62 0 22 0;
+#X connect 63 0 16 0;
+#X connect 64 0 10 0;
+#X connect 65 0 2 0;
+#X connect 66 0 152 0;
+#X connect 66 1 152 1;
+#X connect 67 0 152 0;
+#X connect 67 1 152 2;
+#X connect 68 0 152 0;
+#X connect 68 1 152 3;
+#X connect 69 0 152 0;
+#X connect 69 1 152 4;
+#X connect 70 0 152 0;
+#X connect 70 1 152 5;
+#X connect 71 0 152 0;
+#X connect 71 1 152 6;
+#X connect 72 0 152 0;
+#X connect 73 0 66 0;
+#X connect 74 0 67 0;
+#X connect 75 0 68 0;
+#X connect 76 0 69 0;
+#X connect 77 0 70 0;
+#X connect 78 0 71 0;
+#X connect 79 0 80 0;
+#X connect 80 0 133 0;
+#X connect 81 0 84 0;
+#X connect 82 0 83 0;
+#X connect 83 0 81 1;
+#X connect 85 0 87 0;
+#X connect 86 0 88 0;
+#X connect 87 0 86 1;
+#X connect 89 0 86 0;
+#X connect 90 0 134 0;
+#X connect 91 0 93 0;
+#X connect 92 0 94 0;
+#X connect 93 0 92 1;
+#X connect 95 0 92 0;
+#X connect 96 0 135 0;
+#X connect 97 0 99 0;
+#X connect 98 0 100 0;
+#X connect 99 0 98 1;
+#X connect 101 0 98 0;
+#X connect 102 0 136 0;
+#X connect 103 0 105 0;
+#X connect 104 0 106 0;
+#X connect 105 0 104 1;
+#X connect 107 0 104 0;
+#X connect 108 0 137 0;
+#X connect 109 0 111 0;
+#X connect 110 0 112 0;
+#X connect 111 0 110 1;
+#X connect 113 0 110 0;
+#X connect 114 0 138 0;
+#X connect 115 0 117 0;
+#X connect 116 0 118 0;
+#X connect 117 0 116 1;
+#X connect 119 0 116 0;
+#X connect 120 0 139 0;
+#X connect 121 0 115 0;
+#X connect 122 0 109 0;
+#X connect 123 0 103 0;
+#X connect 124 0 97 0;
+#X connect 125 0 91 0;
+#X connect 126 0 85 0;
+#X connect 127 0 126 0;
+#X connect 128 0 125 0;
+#X connect 129 0 124 0;
+#X connect 130 0 123 0;
+#X connect 131 0 122 0;
+#X connect 132 0 121 0;
+#X connect 133 1 82 0;
+#X connect 134 0 89 0;
+#X connect 135 0 95 0;
+#X connect 136 0 101 0;
+#X connect 137 0 107 0;
+#X connect 138 0 113 0;
+#X connect 139 0 119 0;
+#X connect 140 0 152 0;
+#X connect 140 1 152 7;
+#X connect 141 0 152 0;
+#X connect 141 1 152 8;
+#X connect 142 0 152 0;
+#X connect 142 1 152 9;
+#X connect 143 0 152 0;
+#X connect 143 1 152 10;
+#X connect 144 0 152 0;
+#X connect 144 1 152 11;
+#X connect 145 0 152 0;
+#X connect 145 1 152 12;
+#X connect 146 0 140 0;
+#X connect 147 0 145 0;
+#X connect 148 0 144 0;
+#X connect 149 0 143 0;
+#X connect 150 0 142 0;
+#X connect 151 0 141 0;
+#X connect 152 0 79 0;
+#X restore 121 400 pd complexOsc;
+#X obj 103 -54 adc~ 1 2;
+#X obj 261 159 readsf~ 2;
+#X obj 261 16 r playMsg;
+#X obj 345 -42 r openPanel;
+#X obj 345 73 openpanel;
+#X obj 345 104 symbol;
+#X msg 345 126 open \$1;
+#X obj 261 40 moses 1;
+#X obj 300 61 t f b;
+#X obj 312 222 s MIDI_playMsg;
+#X obj 261 429 metro 500;
+#X obj 261 456 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 261 474 sel 0 1;
+#X msg 280 496 symbol STOP;
+#X msg 261 516 symbol;
+#X obj 322 429 sel 0;
+#X obj 322 382 r playMsg;
+#X msg 322 454 \; playStatus label PLAY;
+#X msg 261 543 \; playStatus label \$1;
+#X msg 112 80 0;
+#X obj 492 614 s~ recL;
+#X obj 652 614 s~ recR;
+#X msg 372 2 0;
+#X obj 345 -19 t b b;
+#X obj 345 49 delay 100;
+#X obj 372 26 s MIDI_playMsg;
+#X obj 312 199 f;
+#X obj 327 176 r loop;
+#X msg 8 -9 0 \; pd dsp 1;
+#X obj 400 428 r init;
+#X connect 0 0 5 0;
+#X connect 1 0 16 0;
+#X connect 1 0 65 0;
+#X connect 2 0 17 0;
+#X connect 2 0 64 0;
+#X connect 3 0 4 0;
+#X connect 6 0 8 0;
+#X connect 6 0 13 0;
+#X connect 6 1 9 0;
+#X connect 6 1 12 0;
+#X connect 7 0 85 0;
+#X connect 8 0 10 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 0;
+#X connect 11 0 2 0;
+#X connect 12 0 11 0;
+#X connect 13 0 11 0;
+#X connect 16 0 0 0;
+#X connect 17 0 3 0;
+#X connect 18 0 14 0;
+#X connect 19 0 15 0;
+#X connect 20 0 67 0;
+#X connect 21 0 75 0;
+#X connect 22 0 25 0;
+#X connect 22 1 24 0;
+#X connect 23 0 81 0;
+#X connect 24 0 21 0;
+#X connect 25 0 21 0;
+#X connect 30 0 31 0;
+#X connect 31 0 98 0;
+#X connect 32 1 37 0;
+#X connect 33 0 32 0;
+#X connect 33 0 45 0;
+#X connect 35 0 38 0;
+#X connect 38 0 36 0;
+#X connect 39 0 41 0;
+#X connect 40 0 43 0;
+#X connect 40 0 47 0;
+#X connect 41 0 40 0;
+#X connect 42 0 33 0;
+#X connect 43 0 44 0;
+#X connect 44 0 45 0;
+#X connect 44 1 45 1;
+#X connect 45 0 35 0;
+#X connect 45 0 46 0;
+#X connect 47 0 34 0;
+#X connect 48 0 97 0;
+#X connect 51 0 80 0;
+#X connect 52 0 51 1;
+#X connect 52 0 63 1;
+#X connect 53 0 52 0;
+#X connect 54 0 61 0;
+#X connect 55 0 56 0;
+#X connect 57 0 62 0;
+#X connect 58 0 57 0;
+#X connect 58 0 60 0;
+#X connect 59 0 53 0;
+#X connect 60 0 59 0;
+#X connect 61 0 58 0;
+#X connect 63 0 79 0;
+#X connect 66 0 63 0;
+#X connect 67 0 70 0;
+#X connect 68 0 70 1;
+#X connect 68 0 76 1;
+#X connect 69 0 68 0;
+#X connect 70 0 66 1;
+#X connect 71 0 66 0;
+#X connect 71 0 67 1;
+#X connect 72 0 73 0;
+#X connect 73 0 69 0;
+#X connect 74 0 51 0;
+#X connect 75 0 76 0;
+#X connect 76 0 74 1;
+#X connect 77 0 74 0;
+#X connect 77 0 75 1;
+#X connect 79 0 78 0;
+#X connect 79 0 55 0;
+#X connect 79 0 119 0;
+#X connect 80 0 55 1;
+#X connect 80 0 78 1;
+#X connect 80 0 120 0;
+#X connect 81 0 91 0;
+#X connect 81 1 82 0;
+#X connect 83 0 84 0;
+#X connect 84 0 89 0;
+#X connect 84 1 90 0;
+#X connect 85 0 92 0;
+#X connect 85 1 86 0;
+#X connect 87 0 80 1;
+#X connect 87 0 79 1;
+#X connect 88 0 87 0;
+#X connect 89 0 88 0;
+#X connect 90 0 87 0;
+#X connect 91 0 22 0;
+#X connect 92 0 6 0;
+#X connect 93 0 118 0;
+#X connect 94 0 81 0;
+#X connect 95 0 96 0;
+#X connect 96 0 87 0;
+#X connect 97 0 127 0;
+#X connect 98 0 16 1;
+#X connect 98 0 17 1;
+#X connect 99 0 18 0;
+#X connect 99 1 19 0;
+#X connect 100 0 26 0;
+#X connect 100 1 27 0;
+#X connect 100 2 125 0;
+#X connect 101 0 106 0;
+#X connect 102 0 122 0;
+#X connect 103 0 104 0;
+#X connect 104 0 105 0;
+#X connect 105 0 100 0;
+#X connect 106 0 100 0;
+#X connect 106 1 107 0;
+#X connect 107 0 100 0;
+#X connect 107 1 104 0;
+#X connect 109 0 110 0;
+#X connect 110 0 111 0;
+#X connect 111 0 113 0;
+#X connect 111 1 112 0;
+#X connect 112 0 117 0;
+#X connect 113 0 117 0;
+#X connect 114 0 116 0;
+#X connect 115 0 109 0;
+#X connect 115 0 114 0;
+#X connect 118 0 85 0;
+#X connect 121 0 124 0;
+#X connect 122 0 123 0;
+#X connect 122 1 121 0;
+#X connect 123 0 103 0;
+#X connect 125 0 108 0;
+#X connect 126 0 125 1;
+#X connect 127 0 49 0;
+#X connect 128 0 116 0;
+#X restore 758 337 pd code;
+#X text 11 74 BASIC OPERATIONS;
+#X text 455 264 - The program writes files to .wav @ 16 bit.;
+#X text 12 95 LIVE/FILE. Select the input source you will use.;
+#X text 12 165 PLAY. Click to play the sound file. Click again to stop
+it.;
+#X text 12 245 MODULATION. Move the slider to adjust the frequency
+of the modulation signal.;
+#X text 12 275 CENTS. Move the slider to fine tune the frequency of
+the modulation signal. This control works in combination with the previous
+one.;
+#X text 12 319 HARMONICS. Use this knobs to synthesize the modulation
+signal. You have up to the 7th harmonic from the fundamental frequency
+you have previously selected.;
+#X text 12 369 SUBHARMONICS. Use this knobs to synthesize the modulation
+signal. Subharmonics are lower than the fundamental frequency by the
+ratios 1/2...1/7.;
+#X text 12 459 VOLUME. Move to adjust the output volume.;
+#X text 11 -71 RINGO by Angel Faraldo. April 2011;
+#X text 451 -46 AUDIO/MIDI SETUP;
+#X text 445 -29 - If you want to use any MIDI devices \, plug them
+in before you open Pd.;
+#X obj 754 60 bng 10 250 50 0 learn_RingerPitch -- empty 17 7 0 10
+-228856 -128992 -1;
+#X text 454 169 CURRENT LIMITATIONS / TODO'S;
+#X text 455 284 - A method to store a number of presets could be added.
+;
+#X text 455 304 - Also \, automation of the parameters could be desired
+at some point.;
+#X text 455 191 - The program only accepts .wav or .aiff files as input.
+It could be extended to accept .mp3 files;
+#X text 448 56 - To use the MIDI learn function just click on the;
+#X text 447 69 located above each programmable control while moving
+the controller you want to assing to it. This should assing it and
+store it for latter use \, so you will only need to do this once.;
+#X text 12 479 REC. Click to write the output to a sound file in real-time.
+Click again to stop recording. A file labeled "Ringo_date@time.wav"
+will be created in the root folder of your computer.;
+#X text 12 -46 Ringo is a Ring-Modulator that accepts both live input
+and sound files and it is capable of writing the output back to a sound
+file. The modulation signal can be synthesized with the 13 knobs under
+the 'harmonics' and 'subharmonic' labels and thus reach different levels
+of harmonic complexity. It can be operated from within the GUI or with
+any MIDI external controler. MIDI learn functionality has been enabled
+for the main controls.;
+#X text 12 115 OPEN. If you selected FILE \, click open to browse you
+OS for a sound file. At the present \, only .wav and .aiff are accepted.
+;
+#X text 12 185 MONO/STEREO. Select the number of channels of both your
+Input and Output signals. If you select MONO \, you will hear the same
+signal through both loudspeakers but the written file will be MONO.
+;
+#X text 12 419 WET/DRY. Use this slider to control the mix between
+the input and the ring-modulated signals.;
+#X text 445 0 - Then go to menu 'Pd-extended > Preferences > MIDI Settings'
+and select the MIDI device you will use.Unfortunately you will need
+to do this every time you run the program.;
+#X text 448 126 - Go to menu 'Pd-extended > Preferences > Audio Settings'
+and select the audio drivers you want to use.;
+#X text 455 221 - The current playback system does not have 'pause'
+or 'loop' functions yet. It is only possible to play soundfiles from
+the start.;
+#X restore 1 261 pd instructions;
+#X obj 50 96 tgl 15 0 loop --- empty 17 7 0 10 -191407 -1 -1 0 1;
+#X text 20 94 LOOP;
