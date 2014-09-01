@@ -6,7 +6,7 @@
 #X obj 199 70 osc~ 220;
 #X obj 201 127 *~ 1;
 #X obj 188 188 dac~;
-#X obj 326 28 del 1000;
+#X obj 326 28 del 150;
 #X connect 1 0 6 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
