@@ -1,4 +1,4 @@
-#N canvas 597 293 553 323 10;
+#N canvas 294 435 805 411 10;
 #X obj -4 -34 cnv 15 550 320 empty empty empty 45 25 0 14 -233017 -66577
 0;
 #X obj -4 180 cnv 15 50 20 empty empty MONO 45 25 0 14 -233017 -66577
@@ -12,21 +12,21 @@
 #X obj 102 -23 cnv 15 100 30 empty empty MODULATION 0 10 0 14 -233017
 -66577 0;
 #X obj 104 0 hsl 330 30 0 127 0 0 RingerPitch MIDI_RingerPitch empty
--2 -8 0 10 -191407 -99865 -1 15543 1;
+-2 -8 0 10 -191407 -99865 -1 28043 1;
 #X obj 322 50 cnv 15 20 20 empty pitchCents +0 0 12 0 11 -233017 -66577
 0;
 #X obj 366 52 cnv 15 30 30 empty empty Hz: 0 10 0 10 -233017 -66577
 0;
-#X obj 388 50 cnv 15 20 20 empty pitchHz 246.942 0 12 0 11 -233017
+#X obj 388 50 cnv 15 20 20 empty pitchHz 4186.01 0 12 0 11 -233017
 -66577 0;
 #X obj 105 86 cnv 15 80 20 empty empty HARMONICS 0 10 0 14 -233017
 -66577 0;
 #X obj 106 106 cnv 15 15 15 empty empty 1 0 10 0 10 -233017 -66577
 0;
 #X obj 105 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par1 empty 0 -8 0
-10 -191407 -1 -1 100 256;
+10 -191407 -1 -1 0 256;
 #X obj 105 123 knob 32 32 0 127 0 0 RAW_par1 MIDI_par1 empty 0 -8 0
-8 -262144 -162280 -1 3100 1;
+8 -262144 -162280 -1 0 1;
 #X obj 156 106 cnv 15 15 15 empty empty 2 0 10 0 10 -233017 -66577
 0;
 #X obj 206 106 cnv 15 15 15 empty empty 3 0 10 0 10 -233017 -66577
@@ -49,9 +49,9 @@
 #X obj 304 123 knob 32 32 0 127 0 0 RAW_par5 MIDI_par5 empty 0 -8 0
 8 -262144 -162280 -1 0 1;
 #X obj 354 123 knob 32 32 0 127 0 0 RAW_par6 MIDI_par6 empty 0 -8 0
-8 -262144 -162280 -1 0 1;
+8 -262144 -162280 -1 100 1;
 #X obj 404 123 knob 32 32 0 127 0 0 RAW_par7 MIDI_par7 empty 0 -8 0
-8 -262144 -162280 -1 0 1;
+8 -262144 -162280 -1 400 1;
 #X obj 155 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par2 empty 0 -8 0
 10 -191407 -1 -1 0 256;
 #X obj 205 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par3 empty 0 -8 0
@@ -61,9 +61,9 @@
 #X obj 305 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par5 empty 0 -8 0
 10 -191407 -1 -1 0 256;
 #X obj 355 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par6 empty 0 -8 0
-10 -191407 -1 -1 0 256;
+10 -191407 -1 -1 3 256;
 #X obj 405 162 nbx 3 14 -1e+37 1e+37 0 0 asdfdfad par7 empty 0 -8 0
-10 -191407 -1 -1 0 256;
+10 -191407 -1 -1 12 256;
 #X obj 128 110 bng 10 250 50 0 learn_par1 -- empty 17 7 0 10 -228856
 -128992 -1;
 #X obj 178 110 bng 10 250 50 0 learn_par2 -- empty 17 7 0 10 -228856
@@ -95,11 +95,11 @@
 #X obj 496 -23 cnv 15 20 10 empty empty VOLUME 0 0 0 10 -233017 -66577
 0;
 #X obj 461 1 vsl 20 170 0 127 0 0 Mix MIDI_Mix empty 0 -9 0 10 -191407
--1 -1 8517 1;
+-1 -1 14100 1;
 #X obj 522 -1 vradio 10 1 0 5 noth VUmeter empty 0 -8 0 10 -233017
 -233017 -262144 4;
 #X obj 497 1 vsl 20 170 0 127 0 0 Volume MIDI_Volume empty 0 -9 0 10
--191407 -1 -1 5988 1;
+-191407 -1 -1 11000 1;
 #X obj 471 -16 bng 10 250 50 0 learn_Mix -- empty 17 7 0 10 -228856
 -128992 -1;
 #X obj 506 -16 bng 10 250 50 0 learn_Volume -- empty 17 7 0 10 -228856
@@ -158,8 +158,8 @@
 #X obj 103 182 cnv 2 100 2 empty empty __________________________________________
 0 0 0 14 -233017 -66577 0;
 #X obj 5 116 tgl 60 0 playMsg MIDI_playMsg empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 5 116 cnv 15 60 60 empty playStatus PLAY 7 31 0 20 -191407 -66577
+-1 -1 1 1;
+#X obj 5 116 cnv 15 60 60 empty playStatus STOP 7 31 0 20 -191407 -66577
 0;
 #X obj -4 -31 cnv 15 40 20 empty empty LIVE 45 25 0 14 -233017 -66577
 0;
@@ -177,7 +177,7 @@
 -1 -1;
 #X obj 5 51 cnv 15 60 30 empty empty OPEN 8 15 0 18 -191407 -66577
 0;
-#N canvas 53 22 845 627 instructions 0;
+#N canvas 287 145 845 627 instructions 0;
 #N canvas 154 57 1036 698 code 0;
 #X obj 106 451 hip~ 5;
 #X obj 106 297 hip~ 5;
@@ -386,8 +386,8 @@ writesf~ 2 \, obj 200 150 r~ recR \, obj 175 225 *~ \, connect 0 0
 #X obj 231 367 s par3;
 #X msg 407 216 29;
 #X msg 517 216 30;
-#X msg 627 216 31;
-#X msg 737 216 32;
+#X msg 627 216 0;
+#X msg 737 216 0;
 #X obj 341 164 r learn_par4;
 #X obj 451 164 r learn_par5;
 #X obj 561 164 r learn_par6;
@@ -429,8 +429,8 @@ writesf~ 2 \, obj 200 150 r~ recR \, obj 175 225 *~ \, connect 0 0
 #X obj 20 105 r init;
 #X obj 159 86 r init;
 #X msg 159 106 60;
-#X msg 377 66 3;
-#X msg 517 66 4;
+#X msg 377 66 0;
+#X msg 517 66 0;
 #X obj 311 14 r learn_Mix;
 #X obj 451 14 r learn_Volume;
 #X obj 311 127 s MIDI_Mix;
@@ -1078,7 +1078,7 @@ writesf~ 2 \, obj 200 150 r~ recR \, obj 175 225 *~ \, connect 0 0
 #X obj 300 61 t f b;
 #X obj 312 222 s MIDI_playMsg;
 #X obj 261 429 metro 500;
-#X obj 261 456 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 261 456 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 261 474 sel 0 1;
 #X msg 280 496 symbol STOP;
@@ -1295,5 +1295,5 @@ and select the audio drivers you want to use.;
 or 'loop' functions yet. It is only possible to play soundfiles from
 the start.;
 #X restore 1 261 pd instructions;
-#X obj 50 96 tgl 15 0 loop --- empty 17 7 0 10 -191407 -1 -1 0 1;
+#X obj 50 96 tgl 15 0 loop --- empty 17 7 0 10 -191407 -1 -1 1 1;
 #X text 20 94 LOOP;
