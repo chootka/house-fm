@@ -1,8 +1,8 @@
-#N canvas 365 126 1037 763 10;
+#N canvas 16 22 1435 856 10;
 #X obj 164 132 osc~;
 #X obj 195 197 *~;
 #X obj 139 220 s~ VU;
-#X obj 54 450 dac~ 1 2;
+#X obj 437 698 dac~ 1 2;
 #X obj 254 168 line~;
 #X msg 255 141 \$1 50;
 #X obj 474 65 r~ VU;
@@ -10,7 +10,7 @@
 #X obj 484 141 - 100;
 #X obj 518 186 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 291 74 knob 32 32 0 1 0 0 empty empty MASTERvol -67 30 0 12
--258113 -1 -1 105 1;
+-258113 -1 -1 125 1;
 #X obj 160 92 +~;
 #X floatatom 159 51 5 0 0 0 - - -;
 #X text 154 36 Carrier;
@@ -66,6 +66,12 @@
 #X msg 577 -33 300;
 #X msg 40 0 \; pd dsp 1;
 #X obj 779 89 randomF 0.4;
+#X obj 659 599 mp3cast~;
+#X msg 743 442 disconnect;
+#X msg 742 344 passwd hackme;
+#X msg 742 366 icecast2;
+#X msg 742 390 mountpoint houseFM;
+#X msg 742 412 connect localhost 8000;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 27 1;
@@ -86,10 +92,10 @@
 #X connect 22 0 23 0;
 #X connect 24 0 15 0;
 #X connect 26 0 10 0;
-#X connect 27 0 3 0;
 #X connect 27 0 34 0;
-#X connect 27 1 3 1;
+#X connect 27 0 63 0;
 #X connect 27 1 35 0;
+#X connect 27 1 63 1;
 #X connect 28 0 27 0;
 #X connect 29 0 27 0;
 #X connect 30 0 27 0;
@@ -99,8 +105,8 @@
 #X connect 32 0 46 0;
 #X connect 33 0 30 0;
 #X connect 33 0 47 0;
-#X connect 36 0 3 0;
-#X connect 37 0 3 1;
+#X connect 36 0 63 0;
+#X connect 37 0 63 1;
 #X connect 38 0 36 0;
 #X connect 39 0 37 0;
 #X connect 42 0 61 0;
@@ -109,6 +115,7 @@
 #X connect 43 0 62 0;
 #X connect 44 0 60 0;
 #X connect 44 0 43 0;
+#X connect 44 0 65 0;
 #X connect 48 0 50 0;
 #X connect 49 0 22 0;
 #X connect 50 0 31 0;
@@ -123,3 +130,11 @@
 #X connect 59 0 20 0;
 #X connect 60 0 43 1;
 #X connect 62 0 25 0;
+#X connect 64 0 63 0;
+#X connect 65 0 63 0;
+#X connect 65 0 66 0;
+#X connect 66 0 63 0;
+#X connect 66 0 67 0;
+#X connect 67 0 63 0;
+#X connect 67 0 68 0;
+#X connect 68 0 63 0;

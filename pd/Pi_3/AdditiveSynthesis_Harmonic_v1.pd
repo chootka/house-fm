@@ -1,4 +1,4 @@
-#N canvas 732 24 680 583 10;
+#N canvas 255 56 680 583 10;
 #X obj 119 45 100;
 #X obj 163 47 200;
 #X obj 198 48 300;
@@ -16,31 +16,31 @@
 #X msg 19 24 \; pd dsp 1;
 #X msg 1139 313 wet \$1;
 #X obj 1142 273 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1204 306 5 0 0 0 - - -;
 #X obj 1139 221 loadbang;
 #X msg 1139 244 0.408;
 #X msg 1139 313 wet \$1;
 #X obj 1142 273 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1204 306 5 0 0 0 - - -;
 #X obj 1139 221 loadbang;
 #X msg 1139 244 0.408;
 #X msg 1149 323 wet \$1;
 #X obj 1152 283 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1214 316 5 0 0 0 - - -;
 #X obj 1149 231 loadbang;
 #X msg 1149 254 0.408;
 #X msg 1139 313 wet \$1;
 #X obj 1142 273 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1204 306 5 0 0 0 - - -;
 #X obj 1139 221 loadbang;
 #X msg 1139 244 0.408;
 #X msg 1139 313 wet \$1;
 #X obj 1142 273 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1204 306 5 0 0 0 - - -;
 #X obj 1139 221 loadbang;
 #X msg 1139 244 0.408;
@@ -50,10 +50,10 @@
 #X msg 323 186 wet \$1;
 #X msg 280 333 dry \$1;
 #X obj 324 157 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 300 1;
+-1 -1 296 1;
 #X obj 283 301 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1400 1;
-#X obj 69 211 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+-1 -1 1399 1;
+#X obj 19 73 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X floatatom 404 191 5 0 0 0 - - -;
 #X floatatom 365 331 5 0 0 0 - - -;
 #X floatatom 178 32 5 0 0 0 - - -;
@@ -63,6 +63,12 @@
 #X msg 143 -27 42;
 #X msg 298 128 0.047;
 #X msg 279 262 0.222;
+#X obj 135 436 mp3cast~;
+#X msg 18 371 disconnect;
+#X msg 17 273 passwd hackme;
+#X msg 17 295 icecast2;
+#X msg 17 319 mountpoint houseFM;
+#X msg 17 341 connect localhost 8000;
 #X connect 0 0 8 0;
 #X connect 1 0 8 0;
 #X connect 2 0 8 0;
@@ -97,8 +103,8 @@
 #X connect 35 0 36 0;
 #X connect 37 0 38 0;
 #X connect 38 0 35 0;
-#X connect 39 0 9 0;
-#X connect 39 1 9 1;
+#X connect 39 0 55 0;
+#X connect 39 1 55 1;
 #X connect 41 0 39 0;
 #X connect 42 0 39 0;
 #X connect 43 0 41 0;
@@ -106,8 +112,17 @@
 #X connect 44 0 42 0;
 #X connect 44 0 47 0;
 #X connect 49 0 52 0;
+#X connect 49 0 57 0;
 #X connect 50 0 54 0;
 #X connect 51 0 53 0;
 #X connect 52 0 11 0;
 #X connect 53 0 43 0;
 #X connect 54 0 44 0;
+#X connect 56 0 55 0;
+#X connect 57 0 55 0;
+#X connect 57 0 58 0;
+#X connect 58 0 55 0;
+#X connect 58 0 59 0;
+#X connect 59 0 55 0;
+#X connect 59 0 60 0;
+#X connect 60 0 55 0;
