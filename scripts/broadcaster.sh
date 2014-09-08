@@ -15,23 +15,6 @@ git clone https://github.com/chootka/off-the-grid.git
 cd off-the-grid
 git checkout pd && git submodule init
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# INSTALL DARKICE MP3 STREAMINGI SERVER
-#
-cd ..
-mkdir darkice-src && cd darkice-src
-mkdir src && cd src/
-apt-get source darkice
-cd darkice-1.0/debian
-rm rules
-wget http://www.t3node.com/fileadmin/user_upload/linux/rules
-sudo chmod +x rules
-cd ..
-dpkg-buildpackage -rfakeroot -uc -b
-sudo dpkg -i ../darkice_1.0-999~mp3+1_armhf.deb
-sudo cp ../../off-the-grid/scripts/darkice.cfg /etc/
-sudo aptitude install icecast2
-
 # install prerequisite software
 sudo apt-get install -y batctl iw
 
@@ -39,16 +22,6 @@ sudo apt-get install -y batctl iw
 sudo sed -i '$a batman-adv' /etc/modules
 sudo modprobe batman-adv
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# CREATE VIRTUAL ALSA INTERFACE
-#
-# add the snd-aloop module to be started on boot
-sudo sed -i '$a snd-aloop' /etc/modules
-sudo modprobe snd-aloop
-sudo cp ../../off-the-grid/scripts/asoundrc $HOME/.asoundrc
-alsa_in -j cloop -dcloop &
-alsa_out -j ploop -dploop &
-sudo cp ../../off-the-grid/scripts/loop2jack /usr/local/bin/loop2jack
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # NETWORK CONFIGURATION
 #
