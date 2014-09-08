@@ -29,6 +29,11 @@ SCRIPTNAME=/etc/init.d/$NAME
 			# bring up the BATMAN adv interface
 			$DAEMON ifconfig mesh0 up
 			$DAEMON ifconfig bat0 up
+
+			# start darkice server and begin streaming patch
+			$DAEMON darkice &
+			cd ~/little-nets/off-the-grid/pd/Pi_2
+			pd-extended -nogui Master.pd
 			;;
 		status)
 		;;
