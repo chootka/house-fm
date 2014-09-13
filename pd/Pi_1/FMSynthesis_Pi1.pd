@@ -1,4 +1,4 @@
-#N canvas 365 126 1037 763 10;
+#N canvas 359 22 1037 763 10;
 #X obj 164 132 osc~;
 #X obj 195 197 *~;
 #X obj 139 220 s~ VU;
@@ -10,7 +10,7 @@
 #X obj 484 141 - 100;
 #X obj 518 186 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 291 74 knob 32 32 0 1 0 0 empty empty MASTERvol -67 30 0 12
--258113 -1 -1 105 1;
+-258113 -1 -1 849 1;
 #X obj 160 92 +~;
 #X floatatom 159 51 5 0 0 0 - - -;
 #X text 154 36 Carrier;
@@ -65,7 +65,7 @@
 #X obj 584 99 random 200;
 #X msg 577 -33 300;
 #X msg 40 0 \; pd dsp 1;
-#X obj 779 89 randomF 0.4;
+#X obj 779 89 randomF 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 27 1;
