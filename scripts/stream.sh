@@ -14,11 +14,17 @@ cd darkice-1.0/debian
 rm rules
 wget http://www.t3node.com/fileadmin/user_upload/linux/rules
 sudo chmod +x rules
+#debchange -v 1.0-999~mp3+1
+#darkice (1.0-999~mp3+1) UNRELEASED; urgency=low
+
+#  * New build with mp3 support
+
+# --  <pi@raspberrypi>  Sat, 11 Aug 2012 13:35:06 +0000
 cd ..
 dpkg-buildpackage -rfakeroot -uc -b
-sudo dpkg -i ../darkice_1.0-999~mp3+1_armhf.deb
-sudo cp ../../off-the-grid/scripts/darkice.cfg /etc/
-sudo aptitude install icecast2
+sudo dpkg -i ~/little-nets/darkice-src/darkice/darkice_1.0-999~mp3+1_armhf.deb
+sudo cp ~/little-nets/off-the-grid/scripts/darkice.cfg /etc/
+sudo aptitude install -y icecast2
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # INSTALL BATMAN SOFTWARE
@@ -35,10 +41,10 @@ sudo modprobe batman-adv
 # add the snd-aloop module to be started on boot
 sudo sed -i '$a snd-aloop' /etc/modules
 sudo modprobe snd-aloop
-sudo cp ../../off-the-grid/scripts/asoundrc $HOME/.asoundrc
-alsa_in -j cloop -dcloop &
-alsa_out -j ploop -dploop &
-sudo cp ../../off-the-grid/scripts/loop2jack /usr/local/bin/loop2jack
+sudo cp ~/little-nets/off-the-grid/scripts/asoundrc $HOME/.asoundrc
+# alsa_in -j cloop -dcloop &
+# alsa_out -j ploop -dploop &
+sudo cp ~/little-nets/off-the-grid/scripts/loop2jack.sh /usr/local/bin/loop2jack
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # NETWORK CONFIGURATION
