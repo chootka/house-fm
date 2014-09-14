@@ -6,7 +6,7 @@ sudo apt-get -y --no-install-recommends install build-essential devscripts autot
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # INSTALL DARKICE MP3 STREAMING SERVER
 #
-cd ~/little-nets
+cd /home/ccrma/little-nets
 mkdir darkice-src && cd darkice-src
 mkdir src && cd src/
 apt-get source darkice
@@ -22,8 +22,8 @@ sudo chmod +x rules
 # --  <pi@raspberrypi>  Sat, 11 Aug 2012 13:35:06 +0000
 cd ..
 dpkg-buildpackage -rfakeroot -uc -b
-sudo dpkg -i ~/little-nets/darkice-src/darkice/darkice_1.0-999~mp3+1_armhf.deb
-sudo cp ~/little-nets/off-the-grid/scripts/darkice.cfg /etc/
+sudo dpkg -i /home/ccrma/little-nets/darkice-src/src/darkice_1.0-999~mp3+1_armhf.deb
+sudo cp /home/ccrma/little-nets/off-the-grid/scripts/darkice.cfg /etc/
 sudo aptitude install -y icecast2
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
