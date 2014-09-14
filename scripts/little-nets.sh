@@ -28,10 +28,10 @@ SCRIPTNAME=/etc/init.d/$NAME
 
 			# bring up the BATMAN adv interface
 			$DAEMON ifconfig mesh0 up
-			$DAEMON ifconfig bat0 192.168.90.1 (etc)
+			$DAEMON ifconfig bat0 192.168.90.4
 			$DAEMON ifconfig bat0 up
-			$DAEMON nohup darkice &
-			nohup pd-extended -nogui little-nets/off-the-grid/pd/Pi_2/Master.pd &
+			#$DAEMON nohup darkice &
+			#nohup pd-extended -nogui little-nets/off-the-grid/pd/Pi_2/Master.pd &
 			;;
 		status)
 		;;
