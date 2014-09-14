@@ -41,10 +41,10 @@ sudo modprobe batman-adv
 # add the snd-aloop module to be started on boot
 sudo sed -i '$a snd-aloop' /etc/modules
 sudo modprobe snd-aloop
-sudo cp ~/little-nets/off-the-grid/scripts/asoundrc $HOME/.asoundrc
-# alsa_in -j cloop -dcloop &
-# alsa_out -j ploop -dploop &
-sudo cp ~/little-nets/off-the-grid/scripts/loop2jack.sh /usr/local/bin/loop2jack
+sudo cp /home/ccrma/little-nets/off-the-grid/scripts/asoundrc $HOME/.asoundrc
+alsa_in -j cloop -dcloop &
+alsa_out -j ploop -dploop &
+sudo cp /home/ccrma/little-nets/off-the-grid/scripts/loop2jack.sh /usr/local/bin/loop2jack
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # NETWORK CONFIGURATION
