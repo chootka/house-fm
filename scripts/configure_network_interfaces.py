@@ -40,9 +40,6 @@ for line in interface_lines:
     if line is not None:
         output_lines.append(line.rstrip())
 
-# stick the ap0 + br0 spec onto the end of the output list
-output_lines += if_lines
-
 # join, and remove double rows of empty lines
 output = "\n".join(output_lines).replace("\n\n\n", "\n\n")
 
