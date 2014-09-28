@@ -156,7 +156,6 @@
 #X msg 289 62 passwd hackme;
 #X msg 289 84 icecast2;
 #X msg 289 108 mountpoint houseFM;
-#X msg 289 130 connect localhost 8000;
 #N canvas 99 22 1360 763 fm 0;
 #X obj -209 168 osc~;
 #X obj -178 233 *~;
@@ -168,7 +167,7 @@
 #X obj 300 413 - 100;
 #X obj 301 444 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj -82 110 knob 32 32 0 1 0 0 empty empty MASTERvol -67 30 0 12
--258113 -1 -1 165 1;
+-258113 -1 -1 87 1;
 #X obj -213 128 +~;
 #X floatatom -214 87 5 0 0 0 - - -;
 #X text -219 72 Carrier;
@@ -285,6 +284,7 @@
 #X connect 60 0 48 0;
 #X connect 60 0 47 0;
 #X restore 153 111 pd fm;
+#X msg 289 130 connect localhost 8010;
 #X connect 0 0 4 0;
 #X connect 0 0 4 1;
 #X connect 1 0 4 0;
@@ -292,14 +292,14 @@
 #X connect 2 0 3 0;
 #X connect 2 0 6 0;
 #X connect 2 0 1 0;
-#X connect 2 0 10 0;
+#X connect 2 0 9 0;
 #X connect 5 0 4 0;
 #X connect 6 0 4 0;
 #X connect 6 0 7 0;
 #X connect 7 0 4 0;
 #X connect 7 0 8 0;
 #X connect 8 0 4 0;
-#X connect 8 0 9 0;
+#X connect 8 0 10 0;
 #X connect 9 0 4 0;
+#X connect 9 0 4 1;
 #X connect 10 0 4 0;
-#X connect 10 0 4 1;

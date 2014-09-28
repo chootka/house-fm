@@ -1,4 +1,4 @@
-#N canvas 755 336 537 341 10;
+#N canvas 567 287 537 341 10;
 #N canvas 634 302 451 459 hum 0;
 #X obj 100 35 phasor~ 99.8;
 #X obj 100 65 phasor~ 100.2;
@@ -86,7 +86,7 @@
 #X connect 12 0 8 1;
 #X connect 12 0 10 0;
 #X restore 41 111 pd hum;
-#N canvas 7 63 1052 521 add 1;
+#N canvas 7 63 1052 521 add 0;
 #X obj 129 55 100;
 #X obj 173 57 200;
 #X obj 208 58 300;
@@ -97,34 +97,34 @@
 #X obj 388 61 800;
 #X obj 185 131 osc~;
 #X obj 132 19 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 4200 1;
 #X msg 1149 323 wet \$1;
 #X obj 1152 283 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1214 316 5 0 0 0 - - -;
 #X obj 1149 231 loadbang;
 #X msg 1149 254 0.408;
 #X msg 1149 323 wet \$1;
 #X obj 1152 283 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1214 316 5 0 0 0 - - -;
 #X obj 1149 231 loadbang;
 #X msg 1149 254 0.408;
 #X msg 1159 333 wet \$1;
 #X obj 1162 293 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1224 326 5 0 0 0 - - -;
 #X obj 1159 241 loadbang;
 #X msg 1159 264 0.408;
 #X msg 1149 323 wet \$1;
 #X obj 1152 283 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1214 316 5 0 0 0 - - -;
 #X obj 1149 231 loadbang;
 #X msg 1149 254 0.408;
 #X msg 1149 323 wet \$1;
 #X obj 1152 283 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1999 1;
 #X floatatom 1214 316 5 0 0 0 - - -;
 #X obj 1149 231 loadbang;
 #X msg 1149 254 0.408;
@@ -134,9 +134,9 @@
 #X msg 333 196 wet \$1;
 #X msg 290 343 dry \$1;
 #X obj 334 167 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 296 1;
 #X obj 293 311 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1399 1;
 #X obj 77 337 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X floatatom 414 201 5 0 0 0 - - -;
 #X floatatom 375 341 5 0 0 0 - - -;
@@ -216,7 +216,6 @@
 #X msg 289 62 passwd hackme;
 #X msg 289 84 icecast2;
 #X msg 289 108 mountpoint houseFM;
-#X msg 289 130 connect localhost 8000;
 #N canvas 99 22 1360 763 fm 0;
 #X obj -91 240 osc~;
 #X obj -60 305 *~;
@@ -228,7 +227,7 @@
 #X obj 229 249 - 100;
 #X obj 263 294 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 43 176 knob 32 32 0 1 0 0 empty empty MASTERvol -67 30 0 12
--258113 -1 -1 3100 1;
+-258113 -1 -1 1440 1;
 #X obj -95 200 +~;
 #X floatatom -96 159 5 0 0 0 - - -;
 #X text -101 144 Carrier;
@@ -250,11 +249,11 @@
 #X msg 131 481 dry \$1;
 #X msg 225 614 roomsize \$1;
 #X obj 119 312 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 1597 1;
 #X obj 130 451 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 196 1;
 #X obj 225 582 hsl 50 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2097 1;
 #X obj -79 486 delwrite~ delayLeft 4000;
 #X obj -71 525 delwrite~ delayRight 4000;
 #X obj -74 720 vd~ delayLeft;
@@ -347,6 +346,7 @@
 #X connect 60 0 53 0;
 #X connect 61 0 24 0;
 #X restore 153 111 pd fm;
+#X msg 289 130 connect localhost 8010;
 #X connect 0 0 4 0;
 #X connect 0 0 4 1;
 #X connect 1 0 4 0;
@@ -354,14 +354,14 @@
 #X connect 2 0 3 0;
 #X connect 2 0 6 0;
 #X connect 2 0 1 0;
-#X connect 2 0 10 0;
+#X connect 2 0 9 0;
 #X connect 5 0 4 0;
 #X connect 6 0 4 0;
 #X connect 6 0 7 0;
 #X connect 7 0 4 0;
 #X connect 7 0 8 0;
 #X connect 8 0 4 0;
-#X connect 8 0 9 0;
+#X connect 8 0 10 0;
 #X connect 9 0 4 0;
+#X connect 9 0 4 1;
 #X connect 10 0 4 0;
-#X connect 10 0 4 1;
